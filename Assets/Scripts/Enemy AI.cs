@@ -28,6 +28,7 @@ public class EnemyAI : MonoBehaviour
             if(ExtendedRayCollisionCheck(1,0) == false )
             {
                 xvel = -xvel;
+                GetComponent<SpriteRenderer>().flipX = true;
             }
 
         }
@@ -37,6 +38,7 @@ public class EnemyAI : MonoBehaviour
             if (ExtendedRayCollisionCheck(-1, 0) == false)
             {
                 xvel = -xvel;
+                GetComponent<SpriteRenderer>().flipX = false;
             }
 
         }
