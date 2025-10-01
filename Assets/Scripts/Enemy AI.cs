@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
     Rigidbody2D rb;
     public LayerMask groundLayerMask;
     float xvel;
-
+    public PlayerScript playerScript;
 
     void Start()
     {
@@ -18,6 +18,8 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         Movement();
+
+        print("player pos is " + playerScript.pos);
     }
 
 
